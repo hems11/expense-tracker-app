@@ -48,7 +48,7 @@ export default function Home() {
     () => calculateCategoryStats(expenseList),
     [expenseList]
   );
-  const expense = useMemo(
+  const expenses = useMemo(
     () => expenseList.reduce((total, item) => total + Number(item?.price), 0),
     [expenseList]
   );
@@ -76,7 +76,7 @@ export default function Home() {
 
         <Card
           title="Expenses"
-          money={expense}
+          money={expenses}
           buttonText="+ Add Expense"
           buttonType="failure"
           success={false}

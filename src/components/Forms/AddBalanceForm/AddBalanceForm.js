@@ -29,7 +29,7 @@ export default function AddBalanceForm({ setIsOpen, setBalance }) {
 
                 <input
                     type="number"
-                    placeholder='Income Amount'
+                    placeholder="Income Amount"
                     value={income}
                     onChange={(e) => setIncome(e.target.value)}
                     required

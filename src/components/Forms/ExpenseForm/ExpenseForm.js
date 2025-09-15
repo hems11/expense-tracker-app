@@ -11,7 +11,7 @@ export default function ExpenseForm({
   setBalance,
   balance,
 }) {
-  const initFormData = editId
+  const initFormData = editId=[]
     ? expenseList.find((item) => item.id == editId)
     : {
         title: "",
